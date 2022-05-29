@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+    - name: "This is the first Task"
+      file:
+        path: ~/test
+        state: directory
+      notify: 
+        - Assign Permission
+  
+  handlers:
+    - name: Assign Permission
+      shell: chmod 777 ~/test
+
+     

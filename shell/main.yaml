@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    # - shell: mkdir newdir
+    - file:
+        path: newdir
+        state: directory

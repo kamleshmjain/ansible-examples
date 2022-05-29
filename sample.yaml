@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks:
+    - name: "This is the first Task"
+      debug:
+        msg: "This is my First task Execution"
+      tags: first
+
+    - name: "This is the second Task"
+      debug:
+        msg: "This is my Second task Execution"
+      tags: second 
+        

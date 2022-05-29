@@ -1,0 +1,5 @@
+---
+- name: copy sample file to remote hosts
+  copy:
+    src: sample.txt
+    dest: /tmp
