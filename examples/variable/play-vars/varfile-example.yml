@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars_files:
+    - varfile.yml
+  tasks: 
+    - name: print the vars from varfile
+      debug:
+        msg: "{{ name }} {{ age }}"

@@ -1,0 +1,12 @@
+[mumbai]
+54.165.97.178   language="Marathi"
+
+[gujrat]
+35.175.246.112 
+
+[india:children]
+mumbai
+gujrat
+
+[india:vars]
+language="Hindi"

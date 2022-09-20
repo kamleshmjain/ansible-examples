@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Install Java
+      package:
+        name: "{{ pkg }}"
+        state: present
+      vars:
+        pkg: "java"
+
