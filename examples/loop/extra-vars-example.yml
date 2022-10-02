@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Installing "{{ package }}"
+      debug: 
+        msg: "Installing {{ package }}"

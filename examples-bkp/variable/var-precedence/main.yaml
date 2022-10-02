@@ -2,11 +2,11 @@
 - hosts: all
   vars:
     language: "vars -  winner"
-  vars_files:
-    - varfiles.yml
+#  vars_files:
+#    - varfiles.yml
   tasks:
     - name: "state and its popular language"
       debug:
         msg: "{{ language }}"
-        # vars:
-        # language: "Taskvar - winner"
+#      vars:
+#        language: "Taskvar - winner"

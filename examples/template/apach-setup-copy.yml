@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Install apache
+      package:
+        name: httpd
+        state: present
+    
+    - name: copy custome template file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+      notify: restart httpd
+  
+  handlers:
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted

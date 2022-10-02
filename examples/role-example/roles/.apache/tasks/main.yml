@@ -1,0 +1,14 @@
+---
+- name: Install apache
+  package:
+    name: httpd
+    state: present
+  become: yes
+
+- name: copy custome template file
+  template:
+    src: index.html
+    dest: /var/www/html/index.html
+  become: yes
+  notify: restart httpd
+

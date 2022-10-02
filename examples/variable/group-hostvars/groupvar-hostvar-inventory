@@ -1,8 +1,8 @@
 [mumbai]
-mumbai ansible_host=54.165.97.178   language="Marathi"
+mumbai ansible_host=172.31.27.141   language="Marathi"
 
 [gujrat]
-gujrat ansible_host=35.175.246.112 
+gujrat ansible_host=172.31.82.198
 
 [india:children]
 mumbai

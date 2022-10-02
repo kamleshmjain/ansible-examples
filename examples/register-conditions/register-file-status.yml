@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: check if file file1 exists or not
+      stat:
+        path: file1
+      register: file1_status

@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  vars:
+    packages:
+      - java
+      - mysql
+      - httpd
+  tasks:
+    - name: Install {{ item }}
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ packages }}"
+

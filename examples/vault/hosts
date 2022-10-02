@@ -1,0 +1,6 @@
+[db]
+172.31.27.141
+
+[db:vars]
+db_user=kamlesh
+db_password=Pass@123

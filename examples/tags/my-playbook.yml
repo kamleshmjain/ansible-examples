@@ -1,0 +1,26 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Installing Java
+      debug:
+        msg: "Installing Java"
+      tags: java
+
+    - name: Installing mysql
+      debug:
+        msg: "Installing mysql"
+      tags: mysql
+
+    - name: Installing httpd
+      debug:
+        msg: "Installing httpd"
+      tags: httpd
+
+    - name: Installing perl
+      debug:
+        msg: "Installing perl"
+      tags: perl
+
+    - name: Installing git
+      debug:
+        msg: "Installing git"

@@ -1,0 +1,12 @@
+[mumbai]
+mumbai ansible_host=54.165.97.178   language="Marathi"
+
+[gujrat]
+gujrat ansible_host=35.175.246.112 
+
+[india:children]
+mumbai
+gujrat
+
+[india:vars]
+language="Hindi"

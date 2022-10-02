@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: list /tmp directory content
+      shell: "ls -lrt /tmp"
+      register: val
+
+    - debug: var=val

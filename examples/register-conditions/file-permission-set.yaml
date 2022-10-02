@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: set permission for file1 to 777
+      file:
+        path: file1
+        mode: 0777

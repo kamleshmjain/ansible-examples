@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    name: "Jay"
+  tasks:
+    - name: print the name of student
+      debug:
+        msg: "{{ name }}"

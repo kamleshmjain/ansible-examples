@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: "state and its popular language"
+      debug:
+        msg: "{{ inventory_hostname }} {{ ansible_host }} speaks in {{ language }}"

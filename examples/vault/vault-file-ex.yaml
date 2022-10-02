@@ -1,0 +1,11 @@
+---
+- hosts: db
+  vars_files:
+    - varfile.yml
+  tasks:
+    - name: Printing vars from encrypted file
+      debug:
+        msg: >-
+          " User: {{ user }}
+            Pass: {{ pass }}
+            age: {{ age }}"

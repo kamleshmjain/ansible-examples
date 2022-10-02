@@ -1,0 +1,5 @@
+---
+- hosts: db
+  tasks:
+    - debug:
+        msg: "user: {{ db_user }}/password: {{ db_password }}"

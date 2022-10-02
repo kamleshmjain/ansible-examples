@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks:
+    - name: check if file1 exists
+      stat:
+        path: file1
+      register: file1_status
+
+    - name: change the permission of file1 to 777 if it exists
+      file:
+        path: file1
+        mode: 0777
+      when: file1_status.stat.exists

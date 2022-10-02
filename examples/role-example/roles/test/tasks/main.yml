@@ -1,0 +1,4 @@
+---
+- name: Running Test role tasks
+  debug:
+    msg: " Running Test role Task1"

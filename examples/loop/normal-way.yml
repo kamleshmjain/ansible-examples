@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Installing Java
+      debug:
+        msg: "Installing Java"
+
+    - name: Installing Mysql
+      debug:
+        msg: "Installing mysql"
+
+    - name: Installing Httpd
+      debug:
+        msg: "Installing httpd"

@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: installer playbook
+      debug:
+        msg: "Install .. {{ package }}"
